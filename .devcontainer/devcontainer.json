@@ -1,0 +1,10 @@
+{
+    name: Earthify Backend,
+    dockerfile: Dockerfile,
+    appPort: [3000],
+    runArgs: [--u, node],
+    settings: {
+        terminal.integrated.automationShell.linux: /bin/bash
+    },
+    postCreateCommand: npm install
+}
